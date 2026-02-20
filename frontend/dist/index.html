@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zeppelin — Gas Town Visualizer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+  <div id="app">
+    <div id="summary-bar">
+      <span class="logo">⚡ ZEPPELIN</span>
+      <span id="status-rigs">0 rigs</span>
+      <span id="status-polecats">0 polecats</span>
+      <span id="status-beads">0 beads</span>
+      <span id="connection-status" class="connected">● connected</span>
+    </div>
+    <svg id="graph"></svg>
+    <div id="panel" class="hidden">
+      <div id="panel-header">
+        <span id="panel-title"></span>
+        <button id="panel-close">&times;</button>
+      </div>
+      <div id="panel-body"></div>
+    </div>
+    <div id="activity-feed">
+      <div id="activity-header">Activity</div>
+      <div id="activity-list"></div>
+    </div>
+  </div>
+  <script src="graph.js"></script>
+  <script src="panel.js"></script>
+  <script src="activity.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
