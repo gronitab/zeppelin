@@ -2,5 +2,5 @@ package zeppelin
 
 import "embed"
 
-//go:embed frontend/dist/*
+//go:embed all:frontend/dist
 var FrontendFS embed.FS
